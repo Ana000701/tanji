@@ -1,2 +1,92 @@
-$primary-50: #ecffff;
-$primary-100: #cffbfe;
+// custom color system
+
+// primary
+$primary-50: #ecffff !default;
+$primary-100: #cffbfe !default;
+$primary-200: #a6f5fb !default;
+$primary-300: #68ebf8 !default;
+$primary-400: #23d8ed !default;
+$primary-500: #07bbd3 !default;
+$primary-600: #0aa2c0 !default;
+$primary-700: #0f778f !default;
+$primary-800: #166174 !default;
+$primary-900: #175062 !default;
+$primary-950: #083544 !default;
+
+// secondary
+$secondary-50: #ffffea !default;
+$secondary-100: #fffbc5 !default;
+$secondary-200: #fff885 !default;
+$secondary-300: #ffee46 !default;
+$secondary-400: #ffdf1b !default;
+$secondary-500: #ffc107 !default;
+$secondary-600: #e29400 !default;
+$secondary-700: #bb6902 !default;
+$secondary-800: #985108 !default;
+$secondary-900: #7c420b !default;
+$secondary-950: #482200 !default;
+
+// gray
+$gray-50: #f4f5f7 !default;
+$gray-100: #e4e8e9 !default;
+$gray-200: #ccd1d5 !default;
+$gray-300: #a8b1b8 !default;
+$gray-400: #7d8a93 !default;
+$gray-500: #626f78 !default;
+$gray-600: #545e66 !default;
+$gray-700: #495057 !default;
+$gray-800: #40454a !default;
+$gray-900: #383b41 !default;
+$gray-950: #232529 !default;
+
+// success
+$success-50: #f1fcf2 !default;
+$success-100: #dff9e4 !default;
+$success-200: #c1f1cb !default;
+$success-300: #90e5a3 !default;
+$success-400: #58d073 !default;
+$success-500: #32b550 !default;
+$success-600: #28a745 !default;
+$success-700: #1f7634 !default;
+$success-800: #1e5d2d !default;
+$success-900: #1a4d27 !default;
+$success-950: #092a12 !default;
+
+// danger
+$danger-50: #fef2f2 !default;
+$danger-100: #fee6e5 !default;
+$danger-200: #fccfcf !default;
+$danger-300: #f9a8a8 !default;
+$danger-400: #f57779 !default;
+$danger-500: #ec474f !default;
+$danger-600: #dc3545 !default;
+$danger-700: #b7192c !default;
+$danger-800: #99182c !default;
+$danger-900: #83182c !default;
+$danger-950: #490812 !default;
+
+// warning
+$warning-50: #fff8ed !default;
+$warning-100: #ffefd4 !default;
+$warning-200: #ffdba9 !default;
+$warning-300: #ffc072 !default;
+$warning-400: #fe9b39 !default;
+$warning-500: #fd7e14 !default;
+$warning-600: #ee6108 !default;
+$warning-700: #c54909 !default;
+$warning-800: #9c3910 !default;
+$warning-900: #7e3110 !default;
+$warning-950: #441606 !default;
+
+// info
+$info-50: #eef8ff !default;
+$info-100: #d8eeff !default;
+$info-200: #b9e0ff !default;
+$info-300: #89cfff !default;
+$info-400: #52b4ff !default;
+$info-500: #2a91ff !default;
+$info-600: #0d6efd !default;
+$info-700: #0c5ae9 !default;
+$info-800: #1149bc !default;
+$info-900: #144194 !default;
+$info-950: #11295a !default;
