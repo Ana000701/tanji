@@ -20,7 +20,7 @@ $utilities: map-merge(
 );
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-
-@import "./pages/index.scss";
+@import "./layout/xiang/img";
+@import "./layout/xiang/border";
+@import "./layout/xiang/color";
+@import "./layout/xiang/from";

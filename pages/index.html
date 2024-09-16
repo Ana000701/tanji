@@ -6,8 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
+  <style>
+    .bgi-banner{
+      background-image: url(../assets/images/morninglori.jpg_cute_Susuwatari_character_reading_a_book_and_ju_db06dd59-6486-4ae5-9fc1-4c459fac6a1a-1.png);
+      height: 600px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    @media (max-width:576px) {
+      .bgi-banner{
+      background-image: url(../assets/images/mobile-banner.png);
+      height: 375px;
+      background-position: bottom;
+    }
+    }
+  </style>
   <body>
-    <%- include('./layout/header'); -%>
+    <main class="position-sticky top-0 sticky-top bg-white">
+      <%- include('./layout/header'); -%>
+    </main>
+
+    <!-- banner -->
+    <main class="bgi-banner">
+      <article class="container h-100 px-3 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-center  pt-9 pt-lg-0">
+          <h1 class="fs-3 fw-bold text-white text-center d-lg-none mb-6">碳吉人生<br>從學習理財開始</h1>
+          <h1 class="fs-3 fw-bold text-gray-950 d-none d-lg-block mb-4">碳吉人生<br>從學習理財開始</h1>
+          <form class="d-lg-flex position-relative w-100 mb-6 mb-lg-4">
+              <input class="form-control py-6 ps-7 black-op-56 rounded-6 place-white" style="max-width: 451px; " type="search" placeholder="熱門推薦"
+                     aria-label="Search">
+              <img class="img-2 position-absolute translate-middle-y white-icon top-50 ms-6" src="../assets/images/icon/search.png" alt="">
+          </form>
+          <div class="d-flex align-items-center w-100 justify-content-between justify-content-lg-start px-4 px-lg-0"> 
+            <p class="mb-0 d-inline fs-7 text-white black-op-56 py-8 px-6 me-lg-6 rounded-7">#新手入門</p>
+            <p class="mb-0 d-inline fs-7 text-white black-op-56 py-8 px-6 me-lg-6 rounded-7">#2024推薦</p>
+            <p class="mb-0 d-inline fs-7 text-white black-op-56 py-8 px-6 rounded-7">#投資規劃</p>
+          </div>
+      </article>
+    </main>
+
+    <main class="bg-gray-50 py-4 py-lg-5">
+      <article class="container">
+        <section  class="d-flex flex-column align-items-center">
+          <img class="img-3 mt-4 mb-2" src="../assets/images/tanji-2.png" alt="">
+          <p class="mb-0 fw-bold mb-4 fs-lg-1 text-gray-1000">碳吉學院好在哪 !?</p>
+          <div class="row py-3 py-lg-5">
+            <!-- 1 -->
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <img class="img-fluid mb-6 rounded-3" src="../assets/images/morninglori.jpg_cute_Susuwatari_characters_sitting_in_a_classro_c2b3217e-f860-405b-83b4-ce54685fa417-1.png" alt="">
+              <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">全方位財務知識</p>
+              <p class="mb-0 text-gray-700 fs-8 text-center mb-6">涵蓋上班族、創業家、退休族各個人生階段、各行業財務知識</p>
+            </div>
+            <!-- 2 -->
+            <div class="col-lg-4  mb-lg-0  mb-4">
+              <img class="img-fluid mb-6 rounded-3"
+                   src="../assets/images/morninglori.jpg_cute_Susuwatari_teacher_character_standing_in_f_182f6c52-e0a8-43f2-864a-350d34794127-2.png"
+                   alt="">
+              <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">實力派碳吉講師</p>
+              <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                每位講師都具備實戰績效、授課經驗，真的可以帶你碳大吉的講師！</p>
+            </div>
+            <!-- 3 -->
+            <div class="col-lg-4">
+              <img class="img-fluid mb-6 rounded-3"
+                   src="../assets/images/morninglori.jpg_many_finance_books_on_the_table_long_shot_ghibl_0bdad05a-57ed-475d-bdaf-a2abac0e497b-3.png"
+                   alt="">
+              <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">豐富的學習資源</p>
+              <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                除了課程內容以外，碳吉學院還提供額外的學習資源下載，龍吼你碳！</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
