@@ -7,8 +7,55 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-    
+    <main class="position-sticky top-0 sticky-top bg-white">
+      <%- include('./layout/header'); -%>
+    </main>
+
+    <main>
+      <div class="top py-5 ">
+        <div class="container d-flex justify-content-between">
+          <h2 class="fw-bold">近期熱門課程</h2>
+          <div class="arrow d-flex justify-content-center ">
+            <div class="arrow-bg me-2">
+              <img src="../assets/images/icon/arrow-left.png" alt="左箭頭">
+            </div>
+            <div class="arrow-bg">
+              <img src="../assets/images/icon/arrow-right.png" alt="右箭頭">
+            </div>
+          </div>
+        </div>
+        <div class="container top-course d-flex">
+          <div class="course-item d-flex me-4">
+            <div class="course-item-imgContainer me-2">
+              <a href="#">
+                <img src="../assets/images/lesson_3.png" alt="" class="img-fluid mb-6 rounded-3">
+              </a>
+            </div>
+            
+            <div class="content">
+              <h3>理財新手財務啟蒙之旅入門指南</h3>
+              <div class="author">by白老師</div>
+              <span class="badge bg-gray-300 text-black">#新手入門</span>
+              <span class="badge bg-gray-300 text-black">#2024推薦</span>
+            </div>
+          </div>
+          <div class="course-item d-flex me-4">
+            <div class="course-item-imgContainer me-2">
+              <a href="#">
+                <img src="../assets/images/lesson_3.png" alt="" class="img-fluid mb-6 rounded-3">
+              </a>
+            </div>
+            
+            <div class="content">
+              <h3>理財新手財務啟蒙之旅入門指南</h3>
+              <div class="author">by白老師</div>
+              <span class="badge bg-gray-300 text-black">#新手入門</span>
+              <span class="badge bg-gray-300 text-black">#2024推薦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

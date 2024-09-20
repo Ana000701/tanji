@@ -1,38 +1,83 @@
-<main class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-</main>
+<article class="container px-3">
+    <nav class="navbar py-3">
+        <div class="container-fluid px-0">
+            <a class="navbar-brand py-0 me-lg-4" href="index.html">
+                <div class="d-flex align-items-center">
+                    <img class="img-1" src="../assets/images/Dough Dough (24) 1.png" alt="">
+                    <p class="fs-4 text-gray-950">碳吉學院</p>
+                </div>         
+            </a>
+            <div class="d-lg-flex align-items-center d-none me-lg-4">
+                <p class="text-gray-1000 fs-6 fw-semibold me-lg-2">課程分類</p>
+                <img class="img-2" src="../assets/images/icon/chevron-down.png" alt="">
+            </div>
+            <form class="d-lg-flex flex-grow-1 position-relative me-lg-4 d-none">
+                <input class="form-control py-6 ps-7 bg-gray-50 rounded-6" type="search" placeholder="熱門推薦"
+                       aria-label="Search">
+                <img class="img-2 position-absolute translate-middle-y top-50 ms-6" src="../assets/images/icon/search.png" alt="">
+            </form>
+            <!-- 漢堡表單/search/chat -->
+            <div>
+                <img class="img-2 m-6  d-lg-none" src="../assets/images/icon/search.png" alt="">
+                <img class="img-2 m-6" src="../assets/images/icon/cart.png" alt="">
+                <button class="navbar-toggler rounded-0 border-0 p-6 d-lg-none" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#nav"
+                        aria-controls="nav">
+                    <img class="img-2 gray-950-icon" src="../assets/images/icon/menu.png" alt="">
+                </button>
+            </div>
+            
+            <button class="d-none d-lg-block btn fs-6 fw-semibold text-white bg-primary-600 py-6 px-4 rounded-3 ms-lg-2" type="button">登入/註冊</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1"
+                 id="nav"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Offcanvas
+                    </h5>
+                    <button type="button" class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                               id="offcanvasNavbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Another
+                                        action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something
+                                        else
+                                        here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search"
+                               placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success"
+                                type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</article>
