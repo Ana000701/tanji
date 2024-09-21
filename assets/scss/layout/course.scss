@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+body{
+    line-height: 1.2;
+    font-family: 'Noto Sans TC',serif;
+}
 .top{
     background: rgba(244, 245, 247, 1);
 }
@@ -14,7 +20,49 @@
     top:18.6%;
     left:7.2px;
 }
-.course-item-imgContainer{
+.course-item .course-item-imgContainer{
     max-width: 312px;
     height: 208px;
+    margin-right: 12px;
+}
+.course-item-imgContainer a{
+    display: block;
+}
+.content{
+    gap:12px;
+}
+.h4{
+    margin-bottom: 0;
+}
+.author{
+    font-size: 14px;
+}
+.tags{
+    gap: 8px;
+}
+.badge{
+    border-radius: 10000px;
+    padding: 5.5px 12px;
+    font-weight: 400;
+}
+.info{
+    gap:12px
+}
+.info span{
+    font-size: 14px;
+}
+
+.info-item{
+    gap:2px;
+}
+.info-imgContainer{
+    width:20px;
+    height: 20px;
+}
+.price-item{
+    gap: 12px;
+}
+.price-now{
+    gap: 2px;
+    font-size: 20px;
 }
