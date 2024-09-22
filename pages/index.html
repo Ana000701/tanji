@@ -4,81 +4,412 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>首頁</title>
+    <!-- Material Symbols Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <style>
-    .bgi-banner{
+    .bgi-banner {
       background-image: url(../assets/images/morninglori.jpg_cute_Susuwatari_character_reading_a_book_and_ju_db06dd59-6486-4ae5-9fc1-4c459fac6a1a-1.png);
       height: 600px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
-    @media (max-width:576px) {
-      .bgi-banner{
-      background-image: url(../assets/images/mobile-banner.png);
-      height: 375px;
-      background-position: bottom;
+    @media (max-width: 576px) {
+      .bgi-banner {
+        background-image: url(../assets/images/mobile-banner.png);
+        height: 375px;
+        background-position: bottom;
+      }
     }
+    .bg-bottom-banner {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.9) -5.89%,
+          rgba(0, 0, 0, 0) 46.2%
+        ),
+        url(../assets/images/morninglori.jpg_cute_Susuwatari_character_sitting_in_front_of.png);
+      height: 480px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @media (max-width: 576px) {
+        height: 281.25px;
+      }
     }
   </style>
   <body>
     <main class="position-sticky top-0 sticky-top bg-white">
       <%- include('./layout/header'); -%>
     </main>
-
-    <!-- banner -->
-    <main class="bgi-banner">
-      <article class="container h-100 px-3 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-center  pt-9 pt-lg-0">
-          <h1 class="fs-3 fw-bold text-white text-center d-lg-none mb-6">碳吉人生<br>從學習理財開始</h1>
-          <h1 class="fs-3 fw-bold text-gray-950 d-none d-lg-block mb-4">碳吉人生<br>從學習理財開始</h1>
+    <main>
+      <!-- banner -->
+      <section class="bgi-banner">
+        <article
+          class="container h-100 px-3 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-center pt-9 pt-lg-0"
+        >
+          <h1 class="fs-3 fw-bold text-white text-center d-lg-none mb-6">
+            碳吉人生<br />從學習理財開始
+          </h1>
+          <h1 class="fs-3 fw-bold text-gray-950 d-none d-lg-block mb-4">
+            碳吉人生<br />從學習理財開始
+          </h1>
           <form class="d-lg-flex position-relative w-100 mb-6 mb-lg-4">
-              <input class="form-control py-6 ps-7 black-op-56 rounded-6 place-white" style="max-width: 451px; " type="search" placeholder="熱門推薦"
-                     aria-label="Search">
-              <img class="img-2 position-absolute translate-middle-y white-icon top-50 ms-6" src="../assets/images/icon/search.png" alt="">
+            <input
+              class="form-control py-6 ps-7 black-op-56 rounded-6 place-white"
+              style="max-width: 451px"
+              type="search"
+              placeholder="熱門推薦"
+              aria-label="Search"
+            />
+            <img
+              class="img-2 position-absolute translate-middle-y white-icon top-50 ms-6"
+              src="../assets/images/icon/search.png"
+              alt=""
+            />
           </form>
-          <div class="d-flex align-items-center w-100 justify-content-between justify-content-lg-start px-4 px-lg-0"> 
-            <p class="mb-0 d-inline fs-7 text-white black-op-56 py-8 px-6 me-lg-6 rounded-7">#新手入門</p>
-            <p class="mb-0 d-inline fs-7 text-white black-op-56 py-8 px-6 me-lg-6 rounded-7">#2024推薦</p>
-            <p class="mb-0 d-inline fs-7 text-white black-op-56 py-8 px-6 rounded-7">#投資規劃</p>
+          <div
+            class="d-flex align-items-center w-100 justify-content-between justify-content-lg-start px-4 px-lg-0"
+          >
+            <p
+              class="mb-0 d-inline fs-7 text-white black-op-56 me-lg-6 rounded-7"
+            >
+              #新手入門
+            </p>
+            <p
+              class="mb-0 d-inline fs-7 text-white black-op-56 me-lg-6 rounded-7"
+            >
+              #2024推薦
+            </p>
+            <p class="mb-0 d-inline fs-7 text-white black-op-56 rounded-7">
+              #投資規劃
+            </p>
           </div>
-      </article>
-    </main>
-
-    <main class="bg-gray-50 py-4 py-lg-5">
-      <article class="container">
-        <section  class="d-flex flex-column align-items-center">
-          <img class="img-3 mt-4 mb-2" src="../assets/images/tanji-2.png" alt="">
-          <p class="mb-0 fw-bold mb-4 fs-lg-1 text-gray-1000">碳吉學院好在哪 !?</p>
-          <div class="row py-3 py-lg-5">
-            <!-- 1 -->
-            <div class="col-lg-4 mb-lg-0 mb-4">
-              <img class="img-fluid mb-6 rounded-3" src="../assets/images/morninglori.jpg_cute_Susuwatari_characters_sitting_in_a_classro_c2b3217e-f860-405b-83b4-ce54685fa417-1.png" alt="">
-              <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">全方位財務知識</p>
-              <p class="mb-0 text-gray-700 fs-8 text-center mb-6">涵蓋上班族、創業家、退休族各個人生階段、各行業財務知識</p>
-            </div>
-            <!-- 2 -->
-            <div class="col-lg-4  mb-lg-0  mb-4">
-              <img class="img-fluid mb-6 rounded-3"
-                   src="../assets/images/morninglori.jpg_cute_Susuwatari_teacher_character_standing_in_f_182f6c52-e0a8-43f2-864a-350d34794127-2.png"
-                   alt="">
-              <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">實力派碳吉講師</p>
-              <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
-                每位講師都具備實戰績效、授課經驗，真的可以帶你碳大吉的講師！</p>
-            </div>
-            <!-- 3 -->
-            <div class="col-lg-4">
-              <img class="img-fluid mb-6 rounded-3"
-                   src="../assets/images/morninglori.jpg_many_finance_books_on_the_table_long_shot_ghibl_0bdad05a-57ed-475d-bdaf-a2abac0e497b-3.png"
-                   alt="">
-              <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">豐富的學習資源</p>
-              <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
-                除了課程內容以外，碳吉學院還提供額外的學習資源下載，龍吼你碳！</p>
+        </article>
+      </section>
+      <!-- 學院好在哪 -->
+      <section class="bg-gray-50 py-4 py-lg-5">
+        <article class="container">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              class="img-3 mt-4 mb-2"
+              src="../assets/images/tanji-2.png"
+              alt=""
+            />
+            <p class="mb-0 fw-bold mb-4 fs-lg-1 text-gray-1000">
+              碳吉學院好在哪 !?
+            </p>
+            <div class="row py-3 py-lg-5">
+              <!-- 1 -->
+              <div class="col-lg-4 mb-lg-0 mb-4">
+                <img
+                  class="img-fluid mb-6 rounded-3"
+                  src="../assets/images/morninglori.jpg_cute_Susuwatari_characters_sitting_in_a_classro_c2b3217e-f860-405b-83b4-ce54685fa417-1.png"
+                  alt=""
+                />
+                <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">
+                  全方位財務知識
+                </p>
+                <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                  涵蓋上班族、創業家、退休族各個人生階段、各行業財務知識
+                </p>
+              </div>
+              <!-- 2 -->
+              <div class="col-lg-4 mb-lg-0 mb-4">
+                <img
+                  class="img-fluid mb-6 rounded-3"
+                  src="../assets/images/morninglori.jpg_cute_Susuwatari_teacher_character_standing_in_f_182f6c52-e0a8-43f2-864a-350d34794127-2.png"
+                  alt=""
+                />
+                <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">
+                  實力派碳吉講師
+                </p>
+                <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                  每位講師都具備實戰績效、授課經驗，真的可以帶你碳大吉的講師！
+                </p>
+              </div>
+              <!-- 3 -->
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid mb-6 rounded-3"
+                  src="../assets/images/morninglori.jpg_many_finance_books_on_the_table_long_shot_ghibl_0bdad05a-57ed-475d-bdaf-a2abac0e497b-3.png"
+                  alt=""
+                />
+                <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">
+                  豐富的學習資源
+                </p>
+                <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                  除了課程內容以外，碳吉學院還提供額外的學習資源下載，龍吼你碳！
+                </p>
+              </div>
             </div>
           </div>
-        </section>
-      </article>
+        </article>
+      </section>
+      <!-- 超過 1 萬位碳吉學員 5 ⭐ 好評 -->
+      <section class="py-4 py-lg-5">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center py-4">
+            <img class="img-3 mb-2" src="../assets/images/tanji-3.png" alt="" />
+            <p class="fw-bold fs-lg-1 text-gray-1000">
+              超過 1 萬位碳吉學員 5 ⭐ 好評
+            </p>
+          </div>
+        </div>
+        <div class="container position-relative">
+          <div class="swiper swiper-card py-lg-5">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide px-6 py-10 py-lg-0">
+                <div class="p-4 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex">
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                    </div>
+                    <time datetime="2024-08-12" class="text-gray-700 fs-7"
+                      >2024.08.12</time
+                    >
+                  </div>
+                  <p class="text-gray-950 fs-6 mb-3">
+                    這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      src="../assets/images/avatar-1.png"
+                      alt="avatar-1"
+                      class="me-2"
+                    />
+                    <div>
+                      <p class="text-gray-950 fs-7">Vivian</p>
+                      <p class="text-gray-700 fs-7">家庭主婦</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide px-6 py-10 py-lg-0">
+                <div class="p-4 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex">
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                    </div>
+                    <time datetime="2024-08-10" class="text-gray-700 fs-7"
+                      >2024.08.10</time
+                    >
+                  </div>
+                  <p class="text-gray-950 fs-6 mb-3 ls-base text-break">
+                    這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      src="../assets/images/avatar-2.png"
+                      alt="avatar-2"
+                      class="me-2"
+                    />
+                    <div>
+                      <p class="text-gray-950 fs-7">Denny</p>
+                      <p class="text-gray-700 fs-7">社會新鮮人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide px-6 py-10 py-lg-0">
+                <div class="p-4 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex">
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                    </div>
+                    <time datetime="2024-08-12" class="text-gray-700 fs-7"
+                      >2024.08.12</time
+                    >
+                  </div>
+                  <p class="text-gray-950 fs-6 mb-3">
+                    這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      src="../assets/images/avatar-3.png"
+                      alt="avatar-3"
+                      class="me-2"
+                    />
+                    <div>
+                      <p class="text-gray-950 fs-7">Mandy</p>
+                      <p class="text-gray-700 fs-7">大學生</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide px-6 py-10 py-lg-0">
+                <div class="p-4 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex">
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                      <img
+                        src="../assets/images/icon/star.png"
+                        alt="star"
+                        class="img-4"
+                      />
+                    </div>
+                    <time datetime="2024-08-12" class="text-gray-700 fs-7"
+                      >2024.08.12</time
+                    >
+                  </div>
+                  <p class="text-gray-950 fs-6 mb-3">
+                    這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      src="../assets/images/avatar-4.png"
+                      alt="avatar-4"
+                      class="me-2"
+                    />
+                    <div>
+                      <p class="text-gray-950 fs-7">Jack</p>
+                      <p class="text-gray-700 fs-7">創業家</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="d-flex justify-content-center">
+            <div class="swiper-card-prev"></div>
+            <div class="swiper-card-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-bottom-banner">
+        <div class="container">
+          <p class="text-white">
+            別再讓錢為你帶來困擾， <br />
+            讓我們一起碳大吉！
+          </p>
+          <a href="#" class="btn bg-white text-gray-950 px-5">探索課程</a>
+        </div>
+      </section>
     </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-card", {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-card-next",
+          prevEl: ".swiper-card-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1240: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
