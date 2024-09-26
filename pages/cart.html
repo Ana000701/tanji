@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購物車</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('./layout/header.ejs'); -%>
+  <div class="container my-5">
+    <!-- 標題 -->
+    <h1 class="h3 mb-3">購物車</h1>
+    <p class="mb-3">請勾選欲購買課程</p>
+
+    <!-- 全選 -->
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="checkAll">
+      <label class="form-check-label" for="checkAll">全選</label>
+    </div>
+
+    <!-- 課程列表 -->
+    <div class="row border mb-3 p-3 align-items-center">
+      <div class="col-1">
+        <input class="form-check-input" type="checkbox">
+      </div>
+      <div class="col-2">
+        <img src="https://via.placeholder.com/150" class="img-fluid" alt="課程圖像">
+      </div>
+      <div class="col-6">
+        <p>員工股權大揭祕：你的公司福利股票怎麼用？</p>
+        <p class="text-danger">折扣 -NT$ 80</p>
+      </div>
+      <div class="col-3 text-end">
+        <p>NT$ 800</p>
+        <a href="#" class="text-primary">移至收藏</a> | <a href="#" class="text-danger">刪除</a>
+      </div>
+    </div>
+
+    <!-- 第二個課程 -->
+    <div class="row border mb-3 p-3 align-items-center">
+      <div class="col-1">
+        <input class="form-check-input" type="checkbox">
+      </div>
+      <div class="col-2">
+        <img src="https://via.placeholder.com/150" class="img-fluid" alt="課程圖像">
+      </div>
+      <div class="col-6">
+        <p>線上賺錢, 線下省稅: 網購店家的稅務管理術</p>
+        <p class="text-danger">折扣 -NT$ 168</p>
+      </div>
+      <div class="col-3 text-end">
+        <p>NT$ 1,680</p>
+        <a href="#" class="text-primary">已收藏</a> | <a href="#" class="text-danger">刪除</a>
+      </div>
+    </div>
+
+    <!-- 第三個課程 -->
+    <div class="row border mb-3 p-3 align-items-center">
+      <div class="col-1">
+        <input class="form-check-input" type="checkbox">
+      </div>
+      <div class="col-2">
+        <img src="https://via.placeholder.com/150" class="img-fluid" alt="課程圖像">
+      </div>
+      <div class="col-6">
+        <p>理財新手財務啟蒙之旅入門指南</p>
+        <p class="text-danger">折扣 -NT$ 120</p>
+      </div>
+      <div class="col-3 text-end">
+        <p>NT$ 1,200</p>
+        <a href="#" class="text-primary">已收藏</a> | <a href="#" class="text-danger">刪除</a>
+      </div>
+    </div>
+
+    <!-- 訂單明細 -->
+    <div class="border-top pt-3">
+      <h3 class="h5">訂單明細</h3>
+      <div class="mb-3">
+        <label for="discountCode" class="form-label">折扣券</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="discountCode" placeholder="請輸入折扣券代碼">
+          <button class="btn btn-secondary" type="button">確認</button>
+        </div>
+        <div class="text-danger mt-2">已套用課程9折券</div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <p>3件小計</p>
+        <p>NT$ 3,680</p>
+      </div>
+      <div class="d-flex justify-content-between text-danger">
+        <p>折扣金額</p>
+        <p>-NT$ 368</p>
+      </div>
+      <div class="d-flex justify-content-between">
+        <p>結帳金額</p>
+        <p>NT$ 3,312</p>
+      </div>
+      <button class="btn btn-primary w-100">前往結帳</button>
+    </div>
+  </div>
+
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
