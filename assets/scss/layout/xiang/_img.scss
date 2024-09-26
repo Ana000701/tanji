@@ -6,6 +6,13 @@
   width: 40px;
   height: 40px;
 }
+@media (min-width: 768px) {
+  .img-md-1 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
 .img-2 {
   width: 24px;
   height: 24px;
@@ -17,4 +24,15 @@
 .img-4 {
   width: 20px;
   height: 20px;
+}
+
+.img-5 {
+  width: 32px;
+  height: 32px;
+}
+@media (min-width: 992px) {
+  .img-xl-6 {
+    max-width: 267px;
+    max-height: 178px;
+  }
 }

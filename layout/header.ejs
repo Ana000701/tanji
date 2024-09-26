@@ -1,83 +1,577 @@
-<article class="container px-3">
-    <nav class="navbar py-3">
-        <div class="container-fluid px-0">
-            <a class="navbar-brand py-0 me-lg-4" href="index.html">
-                <div class="d-flex align-items-center">
-                    <img class="img-1" src="../assets/images/Dough Dough (24) 1.png" alt="">
-                    <p class="fs-4 text-gray-950">碳吉學院</p>
-                </div>         
-            </a>
-            <div class="d-lg-flex align-items-center d-none me-lg-4">
-                <p class="text-gray-1000 fs-6 fw-semibold me-lg-2">課程分類</p>
-                <img class="img-2" src="../assets/images/icon/chevron-down.png" alt="">
-            </div>
-            <form class="d-lg-flex flex-grow-1 position-relative me-lg-4 d-none">
-                <input class="form-control py-6 ps-7 bg-gray-50 rounded-6" type="search" placeholder="熱門推薦"
-                       aria-label="Search">
-                <img class="img-2 position-absolute translate-middle-y top-50 ms-6" src="../assets/images/icon/search.png" alt="">
-            </form>
-            <!-- 漢堡表單/search/chat -->
-            <div>
-                <img class="img-2 m-6  d-lg-none" src="../assets/images/icon/search.png" alt="">
-                <img class="img-2 m-6" src="../assets/images/icon/cart.png" alt="">
-                <button class="navbar-toggler rounded-0 border-0 p-6 d-lg-none" type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#nav"
-                        aria-controls="nav">
-                    <img class="img-2 gray-950-icon" src="../assets/images/icon/menu.png" alt="">
-                </button>
-            </div>
-            
-            <button class="d-none d-lg-block btn fs-6 fw-semibold text-white bg-primary-600 py-6 px-4 rounded-3 ms-lg-2" type="button">登入/註冊</button>
-            <div class="offcanvas offcanvas-end" tabindex="-1"
-                 id="nav"
-                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        Offcanvas
-                    </h5>
-                    <button type="button" class="btn-close text-reset"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                               href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                               id="offcanvasNavbarDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu"
-                                aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else
-                                        here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search"
-                               placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success"
-                                type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+<div class="container">
+  <nav class="navbar py-5">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand py-0 me-lg-4" href="index.html">
+        <div class="d-flex align-items-center">
+          <img
+            class="img-1"
+            src="../assets/images/Dough Dough (24) 1.png"
+            alt=""
+          />
+          <p class="fs-4 text-gray-950 ff-jf">碳吉學院</p>
         </div>
-    </nav>
-</article>
+      </a>
+      <div class="d-lg-flex align-items-center d-none me-lg-4">
+        <p class="text-gray-1000 fs-6 fw-semibold me-lg-2">課程分類</p>
+        <img
+          class="img-2"
+          src="../assets/images/icon/chevron-down.png"
+          alt=""
+        />
+      </div>
+      <form
+        class="d-lg-flex flex-grow-1 bg-gray-50 rounded-6 p-4 me-lg-4 d-none"
+      >
+        <label for="navbar-search">
+          <img
+            class="img-2 me-3"
+            src="../assets/images/icon/search.png"
+            alt="search-icon"
+          />
+        </label>
+        <input
+          class="border-0 bg-transparent text-gray-500 ls-base w-100"
+          type="search"
+          placeholder="熱門推薦"
+          aria-label="Search"
+          id="navbar-search"
+        />
+      </form>
+      <!-- 漢堡表單/search/chat -->
+      <div>
+        <img
+          class="img-2 m-6 d-lg-none"
+          src="../assets/images/icon/search.png"
+          alt=""
+        />
+        <img
+          class="img-2 m-6"
+          src="../assets/images/icon/cart.png"
+          alt="cart"
+        />
+        <button
+          class="navbar-toggler rounded-0 border-0 p-6 d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#nav"
+          aria-controls="nav"
+        >
+          <img
+            class="img-2 gray-950-icon"
+            src="../assets/images/icon/menu.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <!-- 漢堡選單內容 -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="nav"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="offcanvasNavbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="offcanvasNavbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- 登入／註冊 -->
+      <button
+        type="button"
+        class="d-none d-lg-block btn text-white bg-primary-600 fs-6 fw-semibold px-6 py-4 rounded-3"
+        data-bs-toggle="modal"
+        data-bs-target="#loginModal"
+      >
+        登入/註冊
+      </button>
+
+      <!--Login Modal -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="max-width: 800px">
+          <div class="modal-content overflow-hidden" style="height: 620px">
+            <div class="modal-body row me-0 p-0">
+              <div class="col-6">
+                <img
+                  src="../assets/images/login-page.png"
+                  alt="login-page"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 py-4">
+                <div class="text-end mb-5">
+                  <button
+                    type="button"
+                    class="close-btn border-0 bg-transparent"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <img
+                      src="../assets/images/icon/xmark.svg"
+                      alt="btn-close-icon"
+                    />
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-end mb-6"
+                >
+                  <h2 class="text-primary-600 fs-3 mb-0">登入</h2>
+                  <p>
+                    沒有帳號，
+                    <button
+                      type="button"
+                      class="signup-btn border-0 bg-transparent ps-0"
+                      data-bs-target="#signUpModal"
+                      data-bs-toggle="modal"
+                    >
+                      快速註冊
+                    </button>
+                  </p>
+                </div>
+                <div class="mb-6">
+                  <h3 class="fs-6 mb-4 ls-base">第三方登入</h3>
+                  <a href="#" class="d-inline-block"
+                    ><img
+                      src="../assets/images/social-icon/google.svg"
+                      alt="google"
+                      class="img-1 me-4"
+                  /></a>
+                  <a href="#" class="d-inline-block"
+                    ><img
+                      src="../assets/images/social-icon/facebook.svg"
+                      alt="facebook"
+                      class="img-1 me-4"
+                  /></a>
+                  <a href="#" class="d-inline-block"
+                    ><img
+                      src="../assets/images/social-icon/line.svg"
+                      alt="line"
+                      class="img-1"
+                  /></a>
+                </div>
+                <div class="mb-6">
+                  <h3 class="fs-6 mb-4 ls-base">會員信箱登入</h3>
+                  <form class="d-flex flex-column mb-4">
+                    <label for="email" class="mb-3 ls-base">會員信箱</label>
+                    <input
+                      type="email"
+                      placeholder="請輸入會員信箱"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4 mb-4"
+                      id="email"
+                    />
+                    <label for="password" class="mb-3 ls-base">密碼</label>
+                    <input
+                      type="password"
+                      placeholder="請輸入密碼"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4"
+                      id="password"
+                    />
+                    <button
+                      type="button"
+                      class="forget-btn border-0 bg-transparent text-end mb-4"
+                      data-bs-target="#forgetModalToggle"
+                      data-bs-toggle="modal"
+                    >
+                      忘記密碼
+                    </button>
+                  </form>
+                  <button
+                    type="submit"
+                    class="btn btn-primary-600 text-white w-100"
+                    disabled
+                  >
+                    登入
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Modal -->
+      <div
+        class="modal fade"
+        id="signUpModal"
+        tabindex="-1"
+        aria-labelledby="signUpModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="max-width: 800px">
+          <div class="modal-content overflow-hidden" style="height: 620px">
+            <div class="modal-body row me-0 p-0">
+              <div class="col-6">
+                <img
+                  src="../assets/images/login-page.png"
+                  alt="login-page"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 py-4">
+                <div class="text-end mb-5">
+                  <button
+                    type="button"
+                    class="close-btn border-0 bg-transparent"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <img
+                      src="../assets/images/icon/xmark.svg"
+                      alt="btn-close-icon"
+                    />
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-end mb-6"
+                >
+                  <h2 class="text-primary-600 fs-3 mb-0">註冊</h2>
+                  <p>
+                    已經註冊，
+                    <button
+                      type="button"
+                      class="login-btn border-0 bg-transparent ps-0"
+                      data-bs-target="#loginModal"
+                      data-bs-toggle="modal"
+                    >
+                      登入
+                    </button>
+                  </p>
+                </div>
+                <div class="mb-6">
+                  <h3 class="fs-6 mb-4 ls-base">第三方註冊</h3>
+                  <a href="#" class="d-inline-block"
+                    ><img
+                      src="../assets/images/social-icon/google.svg"
+                      alt="google"
+                      class="img-1 me-4"
+                  /></a>
+                  <a href="#" class="d-inline-block"
+                    ><img
+                      src="../assets/images/social-icon/facebook.svg"
+                      alt="facebook"
+                      class="img-1 me-4"
+                  /></a>
+                  <a href="#" class="d-inline-block"
+                    ><img
+                      src="../assets/images/social-icon/line.svg"
+                      alt="line"
+                      class="img-1"
+                  /></a>
+                </div>
+                <div class="mb-6">
+                  <h3 class="fs-6 mb-4 ls-base">會員信箱註冊</h3>
+                  <form class="d-flex flex-column mb-4">
+                    <label for="name" class="mb-3 ls-base">會員暱稱</label>
+                    <input
+                      type="text"
+                      placeholder="請輸入會員暱稱"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4 mb-4"
+                      id="name"
+                    />
+                    <label for="signup-email" class="mb-3 ls-base"
+                      >會員信箱</label
+                    >
+                    <input
+                      type="email"
+                      placeholder="請輸入會員信箱"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4 mb-4"
+                      id="signup-email"
+                    />
+                    <label for="signup-password" class="mb-3 ls-base"
+                      >密碼</label
+                    >
+                    <input
+                      type="password"
+                      placeholder="請輸入密碼"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4 mb-4"
+                      id="signup-password"
+                    />
+                  </form>
+                  <button
+                    type="submit"
+                    class="btn btn-primary-600 text-white w-100"
+                    disabled
+                  >
+                    註冊
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- forget password Modal -->
+      <div
+        class="modal fade"
+        id="forgetModalToggle"
+        tabindex="-1"
+        aria-labelledby="forgetModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="max-width: 800px">
+          <div class="modal-content overflow-hidden" style="height: 620px">
+            <div class="modal-body row me-0 p-0">
+              <div class="col-6">
+                <img
+                  src="../assets/images/login-page.png"
+                  alt="login-page"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 py-4">
+                <div class="text-end mb-5">
+                  <button
+                    type="button"
+                    class="close-btn border-0 bg-transparent"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <img
+                      src="../assets/images/icon/xmark.svg"
+                      alt="btn-close-icon"
+                    />
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-end mb-6"
+                >
+                  <h2 class="text-primary-600 fs-3 mb-0">忘記密碼</h2>
+                </div>
+
+                <div class="mb-6">
+                  <form class="d-flex flex-column mb-4">
+                    <label for="member-email" class="mb-3 ls-base"
+                      >請輸入你的會員電子信箱， 收取驗證碼</label
+                    >
+                    <input
+                      type="email"
+                      placeholder="請輸入會員信箱"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4 mb-4"
+                      id="member-email"
+                    />
+                    <label for="CAPTCHA" class="mb-3 ls-base"
+                      >請輸入驗證碼</label
+                    >
+                    <div class="d-flex justify-content-between mb-4">
+                      <input
+                        type="text"
+                        placeholder="請輸入驗證碼"
+                        class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4"
+                        id="CAPTCHA"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary-600 text-white p-4"
+                      >
+                        發送驗證碼
+                      </button>
+                    </div>
+                  </form>
+                  <button
+                    type="submit"
+                    class="btn btn-primary-600 text-white w-100 mb-4"
+                    data-bs-target="#resetPasswordModal"
+                    data-bs-toggle="modal"
+                  >
+                    確認
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-600 text-white w-100"
+                    data-bs-target="#loginModal"
+                    data-bs-toggle="modal"
+                  >
+                    返回登入
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- reset password Modal -->
+      <div
+        class="modal fade"
+        id="resetPasswordModal"
+        tabindex="-1"
+        aria-labelledby="resetPasswordModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="max-width: 800px">
+          <div class="modal-content overflow-hidden" style="height: 620px">
+            <div class="modal-body row me-0 p-0">
+              <div class="col-6">
+                <img
+                  src="../assets/images/login-page.png"
+                  alt="login-page"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 py-4">
+                <div class="text-end mb-5">
+                  <button
+                    type="button"
+                    class="close-btn border-0 bg-transparent"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <img
+                      src="../assets/images/icon/xmark.svg"
+                      alt="btn-close-icon"
+                    />
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-end mb-6"
+                >
+                  <h2 class="text-primary-600 fs-3 mb-0">重設密碼</h2>
+                </div>
+
+                <div class="mb-6">
+                  <form class="d-flex flex-column mb-4">
+                    <label for="reset-password" class="mb-3 ls-base"
+                      >密碼</label
+                    >
+                    <input
+                      type="password"
+                      placeholder="請輸入密碼"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4 mb-4"
+                      id="reset-password"
+                    />
+                    <label for="second-password" class="mb-3 ls-base"
+                      >再次輸入密碼</label
+                    >
+                    <input
+                      type="password"
+                      placeholder="請再次輸入密碼"
+                      class="outline-0 border border-1 border-gray-200 bg-transparent rounded-3 p-4"
+                      id="second-password"
+                    />
+                  </form>
+                  <button
+                    type="submit"
+                    class="btn btn-primary-600 text-white w-100 mb-4"
+                    data-bs-target="#successResetModal"
+                    data-bs-toggle="modal"
+                  >
+                    確認
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- success reset Modal -->
+      <div
+        class="modal fade"
+        id="successResetModal"
+        tabindex="-1"
+        aria-labelledby="successResetModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="max-width: 800px">
+          <div class="modal-content overflow-hidden" style="height: 620px">
+            <div class="modal-body row me-0 p-0">
+              <div class="col-6">
+                <img
+                  src="../assets/images/login-page.png"
+                  alt="login-page"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 py-4">
+                <div class="text-end mb-5">
+                  <button
+                    type="button"
+                    class="close-btn border-0 bg-transparent"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <img
+                      src="../assets/images/icon/xmark.svg"
+                      alt="btn-close-icon"
+                    />
+                  </button>
+                </div>
+                <div class="mb-10">
+                  <h2 class="text-primary-600 fs-3 mb-0">重設密碼成功</h2>
+                </div>
+
+                <div class="text-center">
+                  <p class="mb-6">重設密碼成功，10 秒後將自動跳轉至「首頁」</p>
+                  <a
+                    href="index.html"
+                    class="btn btn-primary-600 text-white mb-4"
+                  >
+                    返回首頁
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

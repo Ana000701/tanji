@@ -1,4 +1,53 @@
-.swiper-card-prev {
+#banner-search {
+  color: $gray-100;
+  &::placeholder {
+    color: $gray-100;
+  }
+  &:focus-visible {
+    border: 0;
+    outline: 0;
+  }
+}
+
+.swiper-course-card-1-prev,
+.swiper-course-card-2-prev,
+.swiper-course-card-3-prev {
+  opacity: 0.5;
+  background-color: white;
+  border: 2px solid $gray-200;
+  width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "\ef7d";
+    font-size: 24px;
+    font-family: "material symbols outlined";
+  }
+}
+.swiper-course-card-1-next,
+.swiper-course-card-2-next,
+.swiper-course-card-3-next {
+  background-color: white;
+  border: 2px solid $gray-200;
+  width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "\e941";
+    font-size: 24px;
+    font-family: "material symbols outlined";
+  }
+}
+
+.swiper-ratings-card-prev {
   opacity: 0.5;
   background-color: $primary-600;
   color: white;
@@ -22,7 +71,7 @@
   }
 }
 
-.swiper-card-next {
+.swiper-ratings-card-next {
   background-color: $primary-600;
   color: white;
   width: 48px;

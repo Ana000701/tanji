@@ -24,11 +24,18 @@
       background-position: center;
       background-size: cover;
     }
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
       .bgi-banner {
-        background-image: url(../assets/images/mobile-banner.png);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.9) -2.4%,
+            rgba(255, 255, 255, 0) 39.73%
+          ),
+          url(../assets/images/mobile-banner.png);
         height: 375px;
+        background-repeat: no-repeat;
         background-position: bottom;
+        background-size: cover;
       }
     }
     .bg-bottom-banner {
@@ -48,162 +55,689 @@
     }
   </style>
   <body>
-    <main class="position-sticky top-0 sticky-top bg-white">
-      <%- include('./layout/header'); -%>
-    </main>
+    <header class="bg-white"><%- include('./layout/header'); -%></header>
+
     <main>
       <!-- banner -->
       <section class="bgi-banner">
-        <article
-          class="container h-100 px-3 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-center pt-9 pt-lg-0"
+        <div
+          class="container h-100 d-flex flex-column justify-content-start justify-content-md-center"
         >
-          <h1 class="fs-3 fw-bold text-white text-center d-lg-none mb-6">
+          <h1
+            class="text-white fs-4 fw-bold ls-base text-shadow-sm text-center d-md-none mb-4 mt-12"
+          >
             碳吉人生<br />從學習理財開始
           </h1>
-          <h1 class="fs-3 fw-bold text-gray-950 d-none d-lg-block mb-4">
+          <h1
+            class="text-gray-950 fs-1 fw-bold lh-sm ls-base d-none d-md-block mb-6"
+          >
             碳吉人生<br />從學習理財開始
           </h1>
-          <form class="d-lg-flex position-relative w-100 mb-6 mb-lg-4">
+          <form
+            class="d-flex align-items-center black-op-56 w-100 rounded-6 p-4 mb-4 mb-md-6 mx-auto mx-md-0"
+            style="max-width: 451px"
+          >
+            <label for="banner-search">
+              <img
+                class="img-2 white-icon me-3"
+                src="../assets/images/icon/search.png"
+                alt="search-icon"
+              />
+            </label>
             <input
-              class="form-control py-6 ps-7 black-op-56 rounded-6 place-white"
-              style="max-width: 451px"
+              class="border-0 bg-transparent ls-base p-0 w-100"
               type="search"
               placeholder="熱門推薦"
               aria-label="Search"
-            />
-            <img
-              class="img-2 position-absolute translate-middle-y white-icon top-50 ms-6"
-              src="../assets/images/icon/search.png"
-              alt=""
+              id="banner-search"
             />
           </form>
           <div
-            class="d-flex align-items-center w-100 justify-content-between justify-content-lg-start px-4 px-lg-0"
+            class="d-flex align-items-center justify-content-center justify-content-md-start w-100"
           >
             <p
-              class="mb-0 d-inline fs-7 text-white black-op-56 me-lg-6 rounded-7"
+              class="black-op-56 text-white ls-base px-4 px-md-5 py-2 py-md-3 me-4 rounded-7"
             >
               #新手入門
             </p>
             <p
-              class="mb-0 d-inline fs-7 text-white black-op-56 me-lg-6 rounded-7"
+              class="black-op-56 text-white ls-base px-4 px-md-5 py-2 py-md-3 me-4 rounded-7"
             >
               #2024推薦
             </p>
-            <p class="mb-0 d-inline fs-7 text-white black-op-56 rounded-7">
+            <p
+              class="black-op-56 text-white ls-base px-4 px-md-5 py-2 py-md-3 rounded-7"
+            >
               #投資規劃
             </p>
           </div>
-        </article>
+        </div>
+      </section>
+      <!-- 碳吉學院學習地圖 -->
+      <section>
+        <!-- title -->
+        <div class="container">
+          <div class="d-flex flex-column align-items-center py-6">
+            <img
+              class="img-3 mb-3"
+              src="../assets/images/tanji-1.png"
+              alt="tanji-1"
+            />
+            <p class="text-gray-1000 fw-bold fs-5 fs-lg-1 lh-sm ls-base">
+              碳吉學院學習地圖
+            </p>
+          </div>
+        </div>
+        <!-- 新手推薦 -->
+        <div class="container">
+          <div class="row flex-column flex-lg-row py-5 py-lg-10">
+            <div class="col col-lg-6">
+              <div
+                class="bg-gray-50 rounded-4 mb-6 mb-lg-0 h-100 d-flex align-items-end"
+              >
+                <img
+                  src="../assets/images/tanji-8.png"
+                  alt="tanji-8"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col col-lg-6">
+              <div
+                class="d-flex justify-content-between align-items-end mt-3 mb-6"
+              >
+                <div class="d-flex flex-column flex-xl-row align-items-xl-end">
+                  <div class="d-flex align-items-center me-4 mb-3 mb-lg-0">
+                    <img
+                      src="../assets/images/icon/location.svg"
+                      alt="location-orange"
+                      class="img-5 img-md-1"
+                    />
+                    <p
+                      class="text-gray-1000 fs-5 fs-lg-3 fw-bold lh-sm ls-base"
+                    >
+                      新手推薦
+                    </p>
+                  </div>
+                  <p class="text-gray-1000 fs-lg-7 ls-base">
+                    打好基礎，啟航財富之旅
+                  </p>
+                </div>
+                <div class="d-flex d-xl-none">
+                  <div class="swiper-course-card-1-prev"></div>
+                  <div class="swiper-course-card-1-next"></div>
+                </div>
+              </div>
+              <div class="swiper swiper-course-card-1">
+                <div class="swiper-wrapper flex-xl-column">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide mb-xl-6">
+                    <div class="d-flex flex-column flex-xl-row">
+                      <div>
+                        <img
+                          src="../assets/images/lesson_3.png"
+                          alt="理財新手財務啟蒙之旅入門指南"
+                          class="img-xl-6 img-fluid rounded-3 me-md-4"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p
+                          class="text-gray-950 fs-5 fw-bold lh-sm ls-base mb-4"
+                        >
+                          理財新手財務啟蒙之旅入門指南
+                        </p>
+                        <p class="text-gray-700 fs-9 ls-base mb-4">
+                          <span class="me-1">by</span>白老師
+                        </p>
+                        <div class="d-flex mb-4">
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/star.svg"
+                              alt="star"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.9</p>
+                          </div>
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/user.svg"
+                              alt="user"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">
+                              8,932 人學習
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../assets/images/icon/clock.svg"
+                              alt="clock"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.6 小時</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end mt-auto">
+                          <p
+                            class="text-primary-600 fs-6 fw-bold lh-sm ls-base me-4"
+                          >
+                            NT$ 3,600
+                          </p>
+                          <p class="text-gray-700 fs-9 ls-base">
+                            <del> NT＄3,600</del>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="d-flex flex-column flex-xl-row">
+                      <div>
+                        <img
+                          src="../assets/images/lesson_3.png"
+                          alt="理財新手財務啟蒙之旅入門指南"
+                          class="img-xl-6 img-fluid rounded-3 me-md-4"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p
+                          class="text-gray-950 fs-5 fw-bold lh-sm ls-base mb-4"
+                        >
+                          理財新手財務啟蒙之旅入門指南
+                        </p>
+                        <p class="text-gray-700 fs-9 ls-base mb-4">
+                          <span class="me-1">by</span>白老師
+                        </p>
+                        <div class="d-flex mb-4">
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/star.svg"
+                              alt="star"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.9</p>
+                          </div>
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/user.svg"
+                              alt="user"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">
+                              8,932 人學習
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../assets/images/icon/clock.svg"
+                              alt="clock"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.6 小時</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end mt-auto">
+                          <p
+                            class="text-primary-600 fs-6 fw-bold lh-sm ls-base me-4"
+                          >
+                            NT$ 3,600
+                          </p>
+                          <p class="text-gray-700 fs-9 ls-base">
+                            <del> NT＄3,600</del>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 投資推薦 -->
+        <div class="container">
+          <div class="row flex-column flex-lg-row py-5 py-lg-10">
+            <div class="col col-lg-6 order-lg-2">
+              <div
+                class="bg-gray-50 rounded-4 mb-6 mb-lg-0 h-100 d-flex align-items-end"
+              >
+                <img
+                  src="../assets/images/tanji-9.png"
+                  alt="tanji-9"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col col-lg-6 order-lg-1">
+              <div
+                class="d-flex justify-content-between align-items-end mt-3 mb-6"
+              >
+                <div class="d-flex flex-column flex-xl-row align-items-xl-end">
+                  <div class="d-flex align-items-center me-4 mb-3 mb-lg-0">
+                    <img
+                      src="../assets/images/icon/location.svg"
+                      alt="location-orange"
+                      class="img-5 img-md-1"
+                    />
+                    <p
+                      class="text-gray-1000 fs-5 fs-lg-3 fw-bold lh-sm ls-base"
+                    >
+                      投資推薦
+                    </p>
+                  </div>
+                  <p class="text-gray-1000 fs-lg-7 ls-base">
+                    建立家庭儲蓄，提升投資能力
+                  </p>
+                </div>
+                <div class="d-flex d-xl-none">
+                  <div class="swiper-course-card-2-prev"></div>
+                  <div class="swiper-course-card-2-next"></div>
+                </div>
+              </div>
+              <div class="swiper swiper-course-card-2">
+                <div class="swiper-wrapper flex-xl-column">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide mb-xl-6">
+                    <div class="d-flex flex-column flex-xl-row">
+                      <div>
+                        <img
+                          src="../assets/images/lesson_1.png"
+                          alt="家庭財務健檢：找出你的金錢漏洞"
+                          class="img-xl-6 img-fluid rounded-3 me-md-4"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p
+                          class="text-gray-950 fs-5 fw-bold lh-sm ls-base mb-4"
+                        >
+                          家庭財務健檢：找出你的金錢漏洞
+                        </p>
+                        <p class="text-gray-700 fs-9 ls-base mb-4">
+                          <span class="me-1">by</span>米莉阿姨
+                        </p>
+                        <div class="d-flex mb-4">
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/star.svg"
+                              alt="star"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.9</p>
+                          </div>
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/user.svg"
+                              alt="user"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">
+                              2,244 人學習
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../assets/images/icon/clock.svg"
+                              alt="clock"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.6 小時</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end mt-auto">
+                          <p
+                            class="text-primary-600 fs-6 fw-bold lh-sm ls-base me-4"
+                          >
+                            NT$ 3,600
+                          </p>
+                          <p class="text-gray-700 fs-9 ls-base">
+                            <del> NT＄3,600</del>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="d-flex flex-column flex-xl-row">
+                      <div>
+                        <img
+                          src="../assets/images/lesson_2.png"
+                          alt="傳家寶的智慧：如何為下一代留一份豐厚的財富"
+                          class="img-xl-6 img-fluid rounded-3 me-md-4"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p
+                          class="text-gray-950 fs-5 fw-bold lh-sm ls-base mb-4"
+                        >
+                          傳家寶的智慧：如何為下一代留一份豐厚的財富
+                        </p>
+                        <p class="text-gray-700 fs-9 ls-base mb-4">
+                          <span class="me-1">by</span>王總
+                        </p>
+                        <div class="d-flex mb-4">
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/star.svg"
+                              alt="star"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.9</p>
+                          </div>
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/user.svg"
+                              alt="user"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">
+                              8,932 人學習
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../assets/images/icon/clock.svg"
+                              alt="clock"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.6 小時</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end mt-auto">
+                          <p
+                            class="text-primary-600 fs-6 fw-bold lh-sm ls-base me-4"
+                          >
+                            NT$ 800
+                          </p>
+                          <p class="text-gray-700 fs-9 ls-base">
+                            <del> NT＄3,600</del>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 退休推薦 -->
+        <div class="container">
+          <div class="row flex-column flex-lg-row py-5 py-lg-10">
+            <div class="col col-lg-6">
+              <div
+                class="bg-gray-50 rounded-4 mb-6 mb-lg-0 h-100 d-flex align-items-end"
+              >
+                <img
+                  src="../assets/images/tanji-10.png"
+                  alt="tanji-10"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col col-lg-6">
+              <div
+                class="d-flex justify-content-between align-items-end mt-3 mb-6"
+              >
+                <div class="d-flex flex-column flex-xl-row align-items-xl-end">
+                  <div class="d-flex align-items-center me-4 mb-3 mb-lg-0">
+                    <img
+                      src="../assets/images/icon/location.svg"
+                      alt="location-orange"
+                      class="img-5 img-md-1"
+                    />
+                    <p
+                      class="text-gray-1000 fs-5 fs-lg-3 fw-bold lh-sm ls-base"
+                    >
+                      退休推薦
+                    </p>
+                  </div>
+                  <p class="text-gray-1000 fs-lg-7 ls-base">
+                    財富自由，掌握未來！
+                  </p>
+                </div>
+                <div class="d-flex d-xl-none">
+                  <div class="swiper-course-card-3-prev"></div>
+                  <div class="swiper-course-card-3-next"></div>
+                </div>
+              </div>
+              <div class="swiper swiper-course-card-3">
+                <div class="swiper-wrapper flex-xl-column">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide mb-xl-6">
+                    <div class="d-flex flex-column flex-xl-row">
+                      <div>
+                        <img
+                          src="../assets/images/lesson_4.png"
+                          alt="退休理財金攻略：從規劃到實現"
+                          class="img-xl-6 img-fluid rounded-3 me-md-4"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p
+                          class="text-gray-950 fs-5 fw-bold lh-sm ls-base mb-4"
+                        >
+                          退休理財金攻略：從規劃到實現
+                        </p>
+                        <p class="text-gray-700 fs-9 ls-base mb-4">
+                          <span class="me-1">by</span>理財達人吳教授
+                        </p>
+                        <div class="d-flex mb-4">
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/star.svg"
+                              alt="star"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.9</p>
+                          </div>
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/user.svg"
+                              alt="user"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">
+                              8,932 人學習
+                            </p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../assets/images/icon/clock.svg"
+                              alt="clock"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.6 小時</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end mt-auto">
+                          <p
+                            class="text-primary-600 fs-6 fw-bold lh-sm ls-base me-4"
+                          >
+                            NT$ 3,600
+                          </p>
+                          <p class="text-gray-700 fs-9 ls-base">
+                            <del> NT＄3,600</del>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="d-flex flex-column flex-xl-row">
+                      <div>
+                        <img
+                          src="../assets/images/lesson_3.png"
+                          alt="通膨時代的退休金：如何保值又增值？"
+                          class="img-xl-6 img-fluid rounded-3 me-md-4"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <p
+                          class="text-gray-950 fs-5 fw-bold lh-sm ls-base mb-4"
+                        >
+                          通膨時代的退休金：如何保值又增值？
+                        </p>
+                        <p class="text-gray-700 fs-9 ls-base mb-4">
+                          <span class="me-1">by</span>投資專家李老師
+                        </p>
+                        <div class="d-flex mb-4">
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/star.svg"
+                              alt="star"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.4</p>
+                          </div>
+                          <div class="d-flex align-items-center me-4">
+                            <img
+                              src="../assets/images/icon/user.svg"
+                              alt="user"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">782 人學習</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../assets/images/icon/clock.svg"
+                              alt="clock"
+                            />
+                            <p class="text-gray-700 fs-9 ls-base">4.6 小時</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end mt-auto">
+                          <p
+                            class="text-primary-600 fs-6 fw-bold lh-sm ls-base me-4"
+                          >
+                            NT$ 1,200
+                          </p>
+                          <p class="text-gray-700 fs-9 ls-base">
+                            <del> NT＄3,600</del>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 學院好在哪 -->
-      <section class="bg-gray-50 py-4 py-lg-5">
-        <article class="container">
-          <div class="d-flex flex-column align-items-center">
+      <section class="bg-gray-50 py-6 py-md-10">
+        <!-- title -->
+        <div class="container">
+          <div class="d-flex flex-column align-items-center py-6">
             <img
-              class="img-3 mt-4 mb-2"
+              class="img-3 mb-3"
               src="../assets/images/tanji-2.png"
-              alt=""
+              alt="tanji-2"
             />
-            <p class="mb-0 fw-bold mb-4 fs-lg-1 text-gray-1000">
+            <p class="text-gray-1000 fw-bold fs-5 fs-lg-1 lh-sm ls-base">
               碳吉學院好在哪 !?
             </p>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
             <div class="row py-3 py-lg-5">
               <!-- 1 -->
-              <div class="col-lg-4 mb-lg-0 mb-4">
+              <div class="col-lg-4 mb-lg-0 mb-6">
                 <img
-                  class="img-fluid mb-6 rounded-3"
+                  class="img-fluid rounded-3 mb-4"
                   src="../assets/images/morninglori.jpg_cute_Susuwatari_characters_sitting_in_a_classro_c2b3217e-f860-405b-83b4-ce54685fa417-1.png"
                   alt=""
                 />
-                <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">
+                <p
+                  class="text-primary-600 mb-4 fs-5 fs-lg-3 fw-bold lh-sm ls-base text-center"
+                >
                   全方位財務知識
                 </p>
-                <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                <p class="mb-0 text-gray-700 fs-7 ls-base text-center mb-4">
                   涵蓋上班族、創業家、退休族各個人生階段、各行業財務知識
                 </p>
               </div>
               <!-- 2 -->
-              <div class="col-lg-4 mb-lg-0 mb-4">
+              <div class="col-lg-4 mb-lg-0 mb-6">
                 <img
-                  class="img-fluid mb-6 rounded-3"
+                  class="img-fluid rounded-3 mb-4"
                   src="../assets/images/morninglori.jpg_cute_Susuwatari_teacher_character_standing_in_f_182f6c52-e0a8-43f2-864a-350d34794127-2.png"
                   alt=""
                 />
-                <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">
+                <p
+                  class="text-primary-600 mb-4 fs-5 fs-lg-3 fw-bold lh-sm ls-base text-center"
+                >
                   實力派碳吉講師
                 </p>
-                <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                <p class="mb-0 text-gray-700 fs-7 ls-base text-center mb-4">
                   每位講師都具備實戰績效、授課經驗，真的可以帶你碳大吉的講師！
                 </p>
               </div>
               <!-- 3 -->
-              <div class="col-lg-4">
+              <div class="col-lg-4 mb-lg-0 mb-6">
                 <img
-                  class="img-fluid mb-6 rounded-3"
+                  class="img-fluid rounded-3 mb-4"
                   src="../assets/images/morninglori.jpg_many_finance_books_on_the_table_long_shot_ghibl_0bdad05a-57ed-475d-bdaf-a2abac0e497b-3.png"
                   alt=""
                 />
-                <p class="text-primary-600 mb-6 text-center fs-4 fw-bold">
+                <p
+                  class="text-primary-600 mb-4 fs-5 fs-lg-3 fw-bold lh-sm ls-base text-center"
+                >
                   豐富的學習資源
                 </p>
-                <p class="mb-0 text-gray-700 fs-8 text-center mb-6">
+                <p class="mb-0 text-gray-700 fs-7 ls-base text-center mb-4">
                   除了課程內容以外，碳吉學院還提供額外的學習資源下載，龍吼你碳！
                 </p>
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </section>
       <!-- 超過 1 萬位碳吉學員 5 ⭐ 好評 -->
-      <section class="py-4 py-lg-5">
+      <section class="py-6 py-md-10">
+        <!-- title -->
         <div class="container">
-          <div class="d-flex flex-column align-items-center py-4">
-            <img class="img-3 mb-2" src="../assets/images/tanji-3.png" alt="" />
-            <p class="fw-bold fs-lg-1 text-gray-1000">
+          <div class="d-flex flex-column align-items-center py-6">
+            <img
+              class="img-3 mb-3"
+              src="../assets/images/tanji-3.png"
+              alt="tanji-3"
+            />
+            <p class="text-gray-1000 fw-bold fs-5 fs-lg-1 lh-sm ls-base">
               超過 1 萬位碳吉學員 5 ⭐ 好評
             </p>
           </div>
         </div>
+        <!-- content -->
         <div class="container position-relative">
-          <div class="swiper swiper-card py-lg-5">
+          <div class="swiper swiper-ratings-card py-5 py-lg-10">
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide px-6 py-10 py-lg-0">
-                <div class="p-4 rounded-3 shadow-card">
-                  <div class="d-flex justify-content-between mb-3">
+              <div class="swiper-slide px-4 py-4">
+                <div class="p-6 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-5">
                     <div class="d-flex">
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                     </div>
-                    <time datetime="2024-08-12" class="text-gray-700 fs-7"
+                    <time
+                      datetime="2024-08-12"
+                      class="text-gray-700 fs-9 ls-base"
                       >2024.08.12</time
                     >
                   </div>
-                  <p class="text-gray-950 fs-6 mb-3">
+                  <p class="text-gray-950 ls-base text-justify mb-5">
                     這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
                   </p>
                   <div class="d-flex">
@@ -213,47 +747,51 @@
                       class="me-2"
                     />
                     <div>
-                      <p class="text-gray-950 fs-7">Vivian</p>
-                      <p class="text-gray-700 fs-7">家庭主婦</p>
+                      <p class="text-gray-950 fs-9 fw-semibold lh-sm ls-base">
+                        Vivian
+                      </p>
+                      <p class="text-gray-700 fs-9 ls-base">家庭主婦</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide px-6 py-10 py-lg-0">
-                <div class="p-4 rounded-3 shadow-card">
-                  <div class="d-flex justify-content-between mb-3">
+              <div class="swiper-slide px-4 py-4">
+                <div class="p-6 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-5">
                     <div class="d-flex">
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                     </div>
-                    <time datetime="2024-08-10" class="text-gray-700 fs-7"
+                    <time
+                      datetime="2024-08-10"
+                      class="text-gray-700 fs-9 ls-base"
                       >2024.08.10</time
                     >
                   </div>
-                  <p class="text-gray-950 fs-6 mb-3 ls-base text-break">
+                  <p class="text-gray-950 ls-base text-justify mb-5">
                     這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
                   </p>
                   <div class="d-flex">
@@ -263,47 +801,51 @@
                       class="me-2"
                     />
                     <div>
-                      <p class="text-gray-950 fs-7">Denny</p>
-                      <p class="text-gray-700 fs-7">社會新鮮人</p>
+                      <p class="text-gray-950 fs-9 fw-semibold lh-sm ls-base">
+                        Denny
+                      </p>
+                      <p class="text-gray-700 fs-9 ls-base">社會新鮮人</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide px-6 py-10 py-lg-0">
-                <div class="p-4 rounded-3 shadow-card">
-                  <div class="d-flex justify-content-between mb-3">
+              <div class="swiper-slide px-4 py-4">
+                <div class="p-6 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-5">
                     <div class="d-flex">
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                     </div>
-                    <time datetime="2024-08-12" class="text-gray-700 fs-7"
-                      >2024.08.12</time
+                    <time
+                      datetime="2024-08-10"
+                      class="text-gray-700 fs-9 ls-base"
+                      >2024.08.10</time
                     >
                   </div>
-                  <p class="text-gray-950 fs-6 mb-3">
+                  <p class="text-gray-950 ls-base text-justify mb-5">
                     這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
                   </p>
                   <div class="d-flex">
@@ -313,47 +855,51 @@
                       class="me-2"
                     />
                     <div>
-                      <p class="text-gray-950 fs-7">Mandy</p>
-                      <p class="text-gray-700 fs-7">大學生</p>
+                      <p class="text-gray-950 fs-9 fw-semibold lh-sm ls-base">
+                        Mandy
+                      </p>
+                      <p class="text-gray-700 fs-9 ls-base">大學生</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide px-6 py-10 py-lg-0">
-                <div class="p-4 rounded-3 shadow-card">
-                  <div class="d-flex justify-content-between mb-3">
+              <div class="swiper-slide px-4 py-4">
+                <div class="p-6 rounded-3 shadow-card">
+                  <div class="d-flex justify-content-between mb-5">
                     <div class="d-flex">
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                       <img
-                        src="../assets/images/icon/star.png"
+                        src="../assets/images/icon/star.svg"
                         alt="star"
                         class="img-4"
                       />
                     </div>
-                    <time datetime="2024-08-12" class="text-gray-700 fs-7"
-                      >2024.08.12</time
+                    <time
+                      datetime="2024-08-08"
+                      class="text-gray-700 fs-9 ls-base"
+                      >2024.08.08</time
                     >
                   </div>
-                  <p class="text-gray-950 fs-6 mb-3">
+                  <p class="text-gray-950 ls-base text-justify mb-5">
                     這門課真的太實用了!老師將複雜的稅務問題講得淺顯易懂,搭配許多實務案例,讓我對網購店家的稅務有了更深入的了解。尤其是電子發票的部分,老師的解說讓我豁然開朗,省下不少時間...
                   </p>
                   <div class="d-flex">
@@ -363,39 +909,116 @@
                       class="me-2"
                     />
                     <div>
-                      <p class="text-gray-950 fs-7">Jack</p>
-                      <p class="text-gray-700 fs-7">創業家</p>
+                      <p class="text-gray-950 fs-9 fw-semibold lh-sm ls-base">
+                        Jack
+                      </p>
+                      <p class="text-gray-700 fs-9 ls-base">創業家</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- If we need navigation buttons -->
+
           <div class="d-flex justify-content-center">
-            <div class="swiper-card-prev"></div>
-            <div class="swiper-card-next"></div>
+            <div class="swiper-ratings-card-prev"></div>
+            <div class="swiper-ratings-card-next"></div>
           </div>
         </div>
       </section>
+      <!-- bottom-banner -->
       <section class="bg-bottom-banner">
-        <div class="container">
-          <p class="text-white">
-            別再讓錢為你帶來困擾， <br />
-            讓我們一起碳大吉！
-          </p>
-          <a href="#" class="btn bg-white text-gray-950 px-5">探索課程</a>
+        <div class="container h-100 d-flex align-items-center">
+          <div>
+            <p
+              class="text-white fs-4 fs-lg-1 fw-bold lh-sm ls-base mb-6 text-shadow-xs"
+            >
+              別再讓錢為你帶來困擾， <br />
+              讓我們一起碳大吉！
+            </p>
+            <a
+              href="course.html"
+              class="btn bg-white border border-2 border-gray-200 text-gray-950 fw-semibold lh-sm ls-base py-4 px-6"
+              >探索課程</a
+            >
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer
+      class="bg-gray-50 border-top border-1 border-gray-200 py-6 py-md-10"
+    >
+      <%- include('./layout/footer'); -%>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".swiper-card", {
+      const swiperCourseCard1 = new Swiper(".swiper-course-card-1", {
+        slidesPerView: 1.2,
+        spaceBetween: 24,
+        navigation: {
+          nextEl: ".swiper-course-card-1-next",
+          prevEl: ".swiper-course-card-1-prev",
+        },
+        // centeredSlides: true,
+        // loop: true,
+        breakpoints: {
+          992: {
+            slidesPerView: 1,
+          },
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            allowTouchMove: window.innerWidth <= 1200,
+          },
+        },
+      });
+      const swiperCourseCard2 = new Swiper(".swiper-course-card-2", {
+        slidesPerView: 1.2,
+        spaceBetween: 24,
+        navigation: {
+          nextEl: ".swiper-course-card-2-next",
+          prevEl: ".swiper-course-card-2-prev",
+        },
+        // centeredSlides: true,
+        // loop: true,
+        breakpoints: {
+          992: {
+            slidesPerView: 1,
+          },
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            allowTouchMove: window.innerWidth <= 1200,
+          },
+        },
+      });
+      const swiperCourseCard3 = new Swiper(".swiper-course-card-3", {
+        slidesPerView: 1.2,
+        spaceBetween: 24,
+        navigation: {
+          nextEl: ".swiper-course-card-3-next",
+          prevEl: ".swiper-course-card-3-prev",
+        },
+        // centeredSlides: true,
+        // loop: true,
+        breakpoints: {
+          992: {
+            slidesPerView: 1,
+          },
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            allowTouchMove: window.innerWidth <= 1200,
+          },
+        },
+      });
+
+      const swiper = new Swiper(".swiper-ratings-card", {
         slidesPerView: 1,
         navigation: {
-          nextEl: ".swiper-card-next",
-          prevEl: ".swiper-card-prev",
+          nextEl: ".swiper-ratings-card-next",
+          prevEl: ".swiper-ratings-card-prev",
         },
         breakpoints: {
           768: {

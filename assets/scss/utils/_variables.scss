@@ -404,6 +404,7 @@ $theme-colors: (
   "info-900": $info-900,
   "info-950": $info-950,
   "gray-1000": #212529,
+  "171717": #171717,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -500,21 +501,30 @@ $gradient: linear-gradient(
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
+  // 4px
   1: $spacer * 0.25,
-  //4px
-  2: $spacer * 0.5,
-  //8px
-  3: $spacer,
-  //16px
-  4: $spacer * 1.5,
-  //24px
-  5: $spacer * 3,
-  //48px
-  6: 12px,
-  7: 44px,
-  8: 6px,
-  9: 65px,
-  10: 28px,
+  // 6px
+  2: $spacer * 0.375,
+  // 8px
+  3: $spacer * 0.5,
+  // 12px
+  4: $spacer * 0.75,
+  // 16px
+  5: $spacer,
+  // 24px
+  6: $spacer * 1.5,
+  // 28px
+  7: $spacer * 1.75,
+  // 32px
+  8: $spacer * 2,
+  // 40px
+  9: $spacer * 2.5,
+  // 48px
+  10: $spacer * 3,
+  // 60px
+  11: $spacer * 3.75,
+  // 65px
+  12: $spacer * 4.0625,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -653,8 +663,9 @@ $border-radius-pill: 50rem !default;
 $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 // fusv-enable
 
-// scss-docs-start box-shadow-variables
+// scss-docs-start box-shadow-variable
 $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-xs: 0 0.25rem 1.5rem 0 rgba($black, 0.25) !default;
 $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
@@ -730,21 +741,27 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
+// $line-height-sm: 1.25 !default;
+$line-height-sm: 1.2 !default;
 $line-height-lg: 2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h2-font-size: $font-size-base * 2.25 !default;
+$h3-font-size: $font-size-base * 2 !default;
+$h4-font-size: $font-size-base * 1.75 !default;
+$h5-font-size: $font-size-base * 1.5 !default;
+$h6-font-size: $font-size-base * 1.25 !default;
+$h7-font-size: $font-size-base * 1.125 !default;
+$h8-font-size: $font-size-base !default;
+$h9-font-size: $font-size-base * 0.875 !default;
+$h10-font-size: $font-size-base * 0.75 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
   //40px
+  1: $h1-font-size,
+  //36px
   2: $h2-font-size,
   //32px
   3: $h3-font-size,
@@ -754,9 +771,14 @@ $font-sizes: (
   5: $h5-font-size,
   //20px
   6: $h6-font-size,
-  //16px
-  7: 14px,
-  8: 18px,
+  // 18px
+  7: $h7-font-size,
+  // 16px
+  8: $h8-font-size,
+  // 14px
+  9: $h9-font-size,
+  // 12px
+  10: $h10-font-size
 ) !default;
 // scss-docs-end font-sizes
 

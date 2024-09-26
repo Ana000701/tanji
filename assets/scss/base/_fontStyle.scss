@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "jf-openhuninn-2.1";
+  src: url(/assets/font/jf-openhuninn-2.1.ttf);
+}
+.ff-jf {
+  font-family: "jf-openhuninn-2.1";
+}
+.ls-base {
+  letter-spacing: 0.014em !important;
+}
+.text-shadow-xs {
+  text-shadow: 0 0.25rem 1.5rem rgba($black, 0.25);
+}
+.text-shadow-sm {
+  text-shadow: 0 2px 8px rgba($black, 0.2);
+}
+.text-justify {
+  text-align: justify;
+}
